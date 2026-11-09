@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamal Nayanam | The Enchanted Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <!-- MAGICAL INTRO -->
+    <div class="magic-loader" id="magicLoader">
+      <div class="loader-stars"></div>
+
+      <div class="parchment">
+        <div class="feather-wrap">
+          <svg class="golden-feather" viewBox="0 0 180 260">
+            <defs>
+              <linearGradient id="featherGold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff1bd" />
+                <stop offset="45%" stop-color="#d9a94d" />
+                <stop offset="100%" stop-color="#875b23" />
+              </linearGradient>
+              <radialGradient id="featherEye">
+                <stop offset="0%" stop-color="#fff3a9" />
+                <stop offset="35%" stop-color="#38b8a3" />
+                <stop offset="70%" stop-color="#315b9b" />
+                <stop offset="100%" stop-color="#9c5c91" />
+              </radialGradient>
+            </defs>
+
+            <path
+              d="M85 238 Q105 120 92 18"
+              fill="none"
+              stroke="url(#featherGold)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M92 20
+                 C35 30 24 76 49 101
+                 C66 118 105 105 118 81
+                 C137 47 119 23 92 20Z"
+              fill="url(#featherGold)"
+              opacity=".9"
+            />
+
+            <path
+              d="M91 31
+                 C54 37 43 69 60 88
+                 C73 102 101 91 108 73
+                 C118 49 107 32 91 31Z"
+              fill="url(#featherEye)"
+            />
+
+            <ellipse
+              cx="84"
+              cy="65"
+              rx="12"
+              ry="19"
+              fill="#e8d48c"
+              opacity=".9"
+            />
+
+            <path
+              d="M88 36 Q95 62 90 91"
+              stroke="#fff0b5"
+              stroke-width="2"
+              fill="none"
+            />
+
+            <g stroke="#e4bd6d" stroke-width="1.5" fill="none" opacity=".9">
+              <path d="M91 110 Q40 80 27 62" />
+              <path d="M90 130 Q42 115 30 95" />
+              <path d="M89 150 Q46 145 35 127" />
+              <path d="M88 170 Q50 173 42 158" />
+              <path d="M87 190 Q56 200 48 185" />
+              <path d="M93 110 Q140 80 153 62" />
+              <path d="M94 130 Q142 115 154 95" />
+              <path d="M95 150 Q138 145 149 127" />
+              <path d="M96 170 Q134 173 142 158" />
+              <path d="M97 190 Q128 200 136 185" />
+            </g>
+
+            <path
+              d="M85 238 Q91 220 97 198"
+              stroke="#fff0b5"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        <p class="loader-kicker">A WORLD OF STORIES AWAITS</p>
+        <h1 class="writing-title">Kamal Nayanam</h1>
+        <p class="loader-subtitle">The Enchanted Library</p>
+
+        <div class="loader-progress">
+          <span></span>
+        </div>
+
+        <p class="loader-status">Opening the doors to wonder...</p>
+      </div>
+    </div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <span class="developer-credit">
+    Developed by Aniket Chowdhury
+</span>
+      <a href="#home" class="brand">
+        <span class="brand-icon">✿</span>
+        <span>KAMAL <b>NAYANAM</b></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#library">Library</a>
+        <a href="#records">My Records</a>
+        <a href="#addBook" class="nav-add">+ Add a Book</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-stars"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">✧ A SANCTUARY OF STORIES ✧</p>
+          <h1>Where every page<br />blooms into a <em>world.</em></h1>
+          <p class="hero-description">
+            Step into a quiet universe of imagination, wisdom and wonder.
+            Discover stories waiting to find their way to you.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#library" class="primary-btn"
+              >Explore the Library <span>↗</span></a
+            >
+            <a href="#collections" class="text-btn">Discover collections</a>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <span>READ · IMAGINE · BLOOM</span>
+          </div>
+        </div>
+
+        <div class="lotus-stage" aria-label="Decorative glowing lotus flower">
+          <div class="lotus-halo halo-one"></div>
+          <div class="lotus-halo halo-two"></div>
+          <div class="lotus-orbit"></div>
+
+          <svg
+            class="lotus"
+            viewBox="0 0 500 430"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="petalOuter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff2f8" />
+                <stop offset="42%" stop-color="#f7a8d1" />
+                <stop offset="100%" stop-color="#9e4a9e" />
+              </linearGradient>
+              <linearGradient id="petalInner" x1="0" y1="0" x2="0.8" y2="1">
+                <stop offset="0%" stop-color="#fff9ed" />
+                <stop offset="48%" stop-color="#f7b5d5" />
+                <stop offset="100%" stop-color="#c66ab1" />
+              </linearGradient>
+              <linearGradient id="petalCenter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff5d7" />
+                <stop offset="55%" stop-color="#f6b6d2" />
+                <stop offset="100%" stop-color="#bd69ad" />
+              </linearGradient>
+              <radialGradient id="lotusGlow">
+                <stop offset="0%" stop-color="#ffe5f5" stop-opacity=".8" />
+                <stop offset="100%" stop-color="#d47abf" stop-opacity="0" />
+              </radialGradient>
+              <filter
+                id="softGlow"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feGaussianBlur stdDeviation="9" />
+              </filter>
+            </defs>
+
+            <ellipse
+              cx="250"
+              cy="310"
+              rx="175"
+              ry="65"
+              fill="url(#lotusGlow)"
+              filter="url(#softGlow)"
+            />
+
+            <!-- Back petals -->
+            <path
+              d="M250 320 C185 240 160 135 250 35 C340 135 315 240 250 320Z"
+              fill="url(#petalOuter)"
+              stroke="#ffe5f3"
+              stroke-opacity=".8"
+              stroke-width="2"
+            />
+            <path
+              d="M245 315 C120 260 55 190 85 112 C175 142 230 222 245 315Z"
+              fill="url(#petalOuter)"
+              stroke="#ffe5f3"
+              stroke-opacity=".65"
+              stroke-width="2"
+            />
+            <path
+              d="M255 315 C380 260 445 190 415 112 C325 142 270 222 255 315Z"
+              fill="url(#petalOuter)"
+              stroke="#ffe5f3"
+              stroke-opacity=".65"
+              stroke-width="2"
+            />
+
+            <!-- Side petals -->
+            <path
+              d="M250 325 C105 330 45 280 32 220 C120 210 205 260 250 325Z"
+              fill="url(#petalInner)"
+              stroke="#ffe8f3"
+              stroke-opacity=".8"
+              stroke-width="2"
+            />
+            <path
+              d="M250 325 C395 330 455 280 468 220 C380 210 295 260 250 325Z"
+              fill="url(#petalInner)"
+              stroke="#ffe8f3"
+              stroke-opacity=".8"
+              stroke-width="2"
+            />
+
+            <!-- Front petals -->
+            <path
+              d="M250 325 C160 300 120 350 95 380 C160 410 220 385 250 325Z"
+              fill="url(#petalOuter)"
+              stroke="#ffe8f3"
+              stroke-opacity=".7"
+              stroke-width="2"
+            />
+            <path
+              d="M250 325 C340 300 380 350 405 380 C340 410 280 385 250 325Z"
+              fill="url(#petalOuter)"
+              stroke="#ffe8f3"
+              stroke-opacity=".7"
+              stroke-width="2"
+            />
+
+            <!-- Center petal -->
+            <path
+              d="M250 330 C205 270 207 205 250 150 C293 205 295 270 250 330Z"
+              fill="url(#petalCenter)"
+              stroke="#fff4e5"
+              stroke-width="2.5"
+            />
+
+            <!-- Delicate petal veins -->
+            <g
+              fill="none"
+              stroke="#fff4e9"
+              stroke-opacity=".65"
+              stroke-width="2"
+            >
+              <path d="M250 310 Q220 210 250 55" />
+              <path d="M235 305 Q175 210 100 125" />
+              <path d="M265 305 Q325 210 400 125" />
+              <path d="M235 315 Q135 280 50 230" />
+              <path d="M265 315 Q365 280 450 230" />
+              <path d="M250 315 Q215 270 250 170" />
+              <path d="M250 315 Q285 270 250 170" />
+            </g>
+
+            <ellipse
+              cx="250"
+              cy="326"
+              rx="67"
+              ry="12"
+              fill="#ffe6bd"
+              opacity=".75"
+            />
+            <circle cx="250" cy="317" r="8" fill="#fff5c9" />
+          </svg>
+
+          <div class="lotus-caption">The art of finding wonder</div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>EST. IN IMAGINATION</span>
+          <span>✧</span>
+          <span>AN OPEN BOOK IS AN OPEN WORLD</span>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stat">
+          <strong id="totalBooks">40</strong>
+          <span>Books in collection</span>
+        </div>
+        <div class="stat">
+          <strong id="availableBooks">40</strong>
+          <span>Available to explore</span>
+        </div>
+        <div class="stat">
+          <strong id="issuedBooks">0</strong>
+          <span>Currently issued</span>
+        </div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>Worlds to discover</span>
+        </div>
+      </section>
+
+      <section class="section collections-section" id="collections">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark-eyebrow">CURATED FOR YOUR CURIOSITY</p>
+            <h2>Explore the <em>collections</em></h2>
+          </div>
+          <p class="section-side-note">
+            A little something for every<br />kind of imagination.
+          </p>
+        </div>
+
+        <div class="collection-grid">
+          <button class="collection-card romance" data-category="Romance">
+            <span class="collection-symbol">♡</span>
+            <span class="collection-name">Romance</span>
+            <span class="collection-sub">Stories of the heart</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card fiction" data-category="Fiction">
+            <span class="collection-symbol">✧</span>
+            <span class="collection-name">Fiction</span>
+            <span class="collection-sub">Beyond the ordinary</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card mystery" data-category="Mystery">
+            <span class="collection-symbol">⌕</span>
+            <span class="collection-name">Mystery</span>
+            <span class="collection-sub">Secrets to uncover</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card fantasy" data-category="Fantasy">
+            <span class="collection-symbol">☾</span>
+            <span class="collection-name">Fantasy</span>
+            <span class="collection-sub">Worlds of wonder</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card science" data-category="Science">
+            <span class="collection-symbol">⚛</span>
+            <span class="collection-name">Science</span>
+            <span class="collection-sub">Curiosity, explained</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card history" data-category="History">
+            <span class="collection-symbol">⌛</span>
+            <span class="collection-name">History</span>
+            <span class="collection-sub">Echoes of the past</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+
+          <button class="collection-card poetry" data-category="Poetry">
+            <span class="collection-symbol">❀</span>
+            <span class="collection-name">Poetry</span>
+            <span class="collection-sub">Words that bloom</span>
+            <span class="collection-arrow">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section library-section" id="library">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark-eyebrow">THE READING ROOM</p>
+            <h2>Find your next <em>chapter</em></h2>
+          </div>
+          <p class="section-side-note">
+            Search a title, author or book ID<br />and let discovery begin.
+          </p>
+        </div>
+
+        <div class="library-tools">
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search by title, author or Book ID..."
+            />
+          </div>
+
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="All">All categories</option>
+            <option>Romance</option>
+            <option>Fiction</option>
+            <option>Mystery</option>
+            <option>Fantasy</option>
+            <option>Science</option>
+            <option>History</option>
+            <option>Poetry</option>
+          </select>
+
+          <select id="sortBooks" aria-label="Sort books">
+            <option value="title">Sort: Title A–Z</option>
+            <option value="year">Sort: Newest first</option>
+            <option value="available">Sort: Availability</option>
+          </select>
+        </div>
+
+        <div class="table-wrap">
+          <table class="book-table">
+            <thead>
+              <tr>
+                <th>BOOK ID</th>
+                <th>BOOK TITLE</th>
+                <th>AUTHOR</th>
+                <th>YEAR</th>
+                <th>AVAILABLE</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="bookTableBody"></tbody>
+          </table>
+          <p class="empty-state" id="emptyState" hidden>
+            No books found. Try another search.
+          </p>
+        </div>
+        <p class="table-footnote">
+          ✧ Select a book to view its details and issue it.
+        </p>
+      </section>
+
+      <section class="add-section" id="addBook">
+        <div class="add-intro">
+          <p class="eyebrow">GROW THE COLLECTION</p>
+          <h2>Every new book<br />opens a <em>new door.</em></h2>
+          <p>
+            Bring another story into Kamal Nayanam. Add a book to the collection
+            and make it available for readers.
+          </p>
+          <div class="add-decoration">✿</div>
+        </div>
+
+        <form class="add-form" id="addBookForm">
+          <h3>Add a new book</h3>
+          <p class="form-subtitle">Enter the details below.</p>
+
+          <label for="bookId">Book ID</label>
+          <input
+            id="bookId"
+            type="text"
+            placeholder="Example: KN041"
+            required
+          />
+
+          <label for="bookTitle">Book title</label>
+          <input
+            id="bookTitle"
+            type="text"
+            placeholder="Enter book title"
+            required
+          />
+
+          <label for="bookAuthor">Author</label>
+          <input
+            id="bookAuthor"
+            type="text"
+            placeholder="Enter author name"
+            required
+          />
+
+          <div class="form-row">
+            <div>
+              <label for="bookYear">Publication year</label>
+              <input
+                id="bookYear"
+                type="number"
+                min="1"
+                max="2026"
+                placeholder="2024"
+                required
+              />
+            </div>
+            <div>
+              <label for="bookCopies">Available copies</label>
+              <input id="bookCopies" type="number" min="0" value="1" required />
+            </div>
+          </div>
+
+          <label for="bookCategory">Category</label>
+          <select id="bookCategory" required>
+            <option value="">Choose a category</option>
+            <option>Romance</option>
+            <option>Fiction</option>
+            <option>Mystery</option>
+            <option>Fantasy</option>
+            <option>Science</option>
+            <option>History</option>
+            <option>Poetry</option>
+          </select>
+
+          <button class="primary-btn form-submit" type="submit">
+            Add to collection <span>↗</span>
+          </button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section records-section" id="records">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark-eyebrow">THE READING JOURNEY</p>
+            <h2>Issue & <em>return records</em></h2>
+          </div>
+          <p class="section-side-note">
+            A little record of every<br />story borrowed.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="book-table records-table">
+            <thead>
+              <tr>
+                <th>BOOK ID</th>
+                <th>BOOK TITLE</th>
+                <th>STUDENT ID</th>
+                <th>ISSUED ON</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="recordsTableBody"></tbody>
+          </table>
+          <p class="empty-state" id="recordsEmpty">
+            No books have been issued yet.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-flower">✿</div>
+      <h2>KAMAL <em>NAYANAM</em></h2>
+      <p>A sanctuary of stories, a garden of imagination.</p>
+      <span>READ · IMAGINE · BLOOM</span>
+      <div class="copyright">© 2026 KAMAL NAYANAM · THE ENCHANTED LIBRARY</div>
+    </footer>
+
+    <dialog id="issueDialog" class="issue-dialog">
+      <form method="dialog" class="dialog-close-form">
+        <button class="dialog-close" aria-label="Close">×</button>
+      </form>
+      <p class="eyebrow dark-eyebrow">A NEW READING JOURNEY</p>
+      <h2>Issue this <em>book</em></h2>
+      <p id="selectedBookDetails" class="selected-book-details"></p>
+
+      <form id="issueForm">
+        <input type="hidden" id="issueBookId" />
+        <label for="studentId">Student ID</label>
+        <input
+          type="text"
+          id="studentId"
+          placeholder="Enter student ID"
+          required
+        />
+        <button class="primary-btn form-submit" type="submit">
+          Confirm issue <span>↗</span>
+        </button>
+        <p class="form-message" id="issueMessage" aria-live="polite"></p>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
